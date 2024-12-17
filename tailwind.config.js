@@ -11,8 +11,11 @@ export default {
         'greenhomes-gray':'#D7D9D8',
         'greenhomes-green':'#597351',
         'greenhomes-darkgreen':'#45593F',
-        'greenhomes-orange':'#45593F',
+        'greenhomes-orange':'#D6A045',
         'greenhomes-lightgreen':'#99A68D',
+      },
+      fontFamily: {
+        'k2d': ['K2D', 'sans-serif']
       }
     },
   },
