@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {FloatingNav} from "./components/Navigation.jsx";
+import {Footer} from "./components/Footer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const navItems = [
+        {
+            name: "HOME",
+            link: "/",
+            icon: <i className="fas fa-home" />,
+            id: 0
+        },
+        {
+            name: "OVER ONS",
+            link: "/over-ons",
+            icon: <i className="fas fa-info-circle" />,
+            id: 1
+        },
+        {
+            name: "ONTWERP UW HUIS",
+            link: "/ontwerp-uw-huis",
+            icon: <i className="fas fa-info-circle" />,
+            id: 2
+        }
+    ]
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="flex h-full w-screen bg-greenhomes-darkgreen">
+        <div>
+            <FloatingNav navItems={navItems}/>
+            <div className="h-[1000px] w-screen bg-greenhomes-white">
+                <h2>GreenHomes</h2>
+            </div>
+            <Footer/>
+        </div>
+    </div>
   )
 }
 

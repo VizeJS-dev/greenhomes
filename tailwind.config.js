@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'greenhomes-white':'#fbfaff',
         'greenhomes-gray':'#D7D9D8',
         'greenhomes-green':'#597351',
         'greenhomes-darkgreen':'#45593F',
