@@ -1,21 +1,18 @@
 import {Button} from "../components/Button.jsx";
 import home from "../assets/Home.webp";
-import HomeMobile from "../assets/HomeMobile.png";
-import {CustomContainer} from "../components/CustomContainer.jsx";
-import {BsHouse, BsBattery, BsTree} from "react-icons/bs";
+import {HomeContainerAnimation} from "../components/Animations/HomeContainerAnimation.jsx";
 
 export const Home = () => {
     return (
-
         <section
             id="home"
+            name="home"
             className="flex min-h-screen flex-col items-center gap-4 bg-greenhomes-white md:gap-0 md:py-6"
         >
             <div
                 className="mr-auto ml-0 flex-col md:w-[90%] md:h-[600px] md:flex-row"
                 id="hero"
             >
-                {/* Mobile */}
                 <div className="flex-col px-6 py-2 md:hidden" id="mobile-hero">
                     <p className="text-5xl font-k2d md:w-[90%] md:text-6xl">
                         Uw duurzame droomhuis wacht op u.
@@ -30,7 +27,6 @@ export const Home = () => {
                         text="Begin met het ontwerpen van uw huis"
                     />
                 </div>
-                {/* Desktop */}
                 <div
                     className="hidden w-full bg-cover bg-center md:block md:h-full md:rounded-r-2xl"
                     style={{backgroundImage: `url(${home})`}}
@@ -51,24 +47,12 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            {/* Mobile Image */}
             <img
                 className="block w-full object-contain md:hidden"
-                src={HomeMobile}
+                src={home}
                 alt="home blob"
             />
-
-            <div className="-bottom-1 z-10 flex flex-col justify-center md:absolute md:items-start md:p-24">
-                <p className="mb-2 text-center text-2xl font-semibold font-dm">Waarom onze woningen uniek zijn:</p>
-                <div className="flex flex-col items-center md:items-start justify-center gap-6 md:flex-row">
-                    <CustomContainer icon={BsHouse} title="Modulair Ontwerp"
-                                     content="Aanpasbare en uitbreidbare huizen die meegroeien met uw behoeften."/>
-                    <CustomContainer icon={BsTree} title="Milieuvriendelijke Materialen"
-                                     content="Duurzaam gewonnen materialen voor een verminderde milieu-impact."/>
-                    <CustomContainer icon={BsBattery} title="Energie-efficiëntie"
-                                     content="Geavanceerde isolatie en slimme systemen voor een lager energieverbruik."/>
-                </div>
-            </div>
+            <HomeContainerAnimation/>
         </section>
     )
 }

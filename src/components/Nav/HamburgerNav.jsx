@@ -43,31 +43,31 @@ export const HamburgerNav = () => {
                         exit={{y: "-100%"}}
                         transition={{duration: 0.3}}
                     >
-                        <h1 className="block px-6 py-2 text-4xl font-bold font-k2d text-greenhomes-darkgreen">GreenHomes</h1>
+                        <h1 className="block px-6 py-2 text-2xl font-bold font- text-greenhomes-darkgreen">GreenHomes</h1>
                         <a
                             href="#header"
-                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
+                            className="block px-6 py-2 text-4xl text-black font-dm"
                             onClick={() => setIsOpen(false)}
                         >
                             Home
                         </a>
                         <a
                             href="#over-ons"
-                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
+                            className="block px-6 py-2 text-4xl text-black font-dm"
                             onClick={() => setIsOpen(false)}
                         >
                             Over ons
                         </a>
                         <a
                             href="#ontwerp-uw-huis"
-                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
+                            className="block px-6 py-2 text-4xl text-black font-dm"
                             onClick={() => setIsOpen(false)}
                         >
                             Ontwerp uw huis
                         </a>
                         <a
                             href="#offerte-aanvragen"
-                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
+                            className="block px-6 py-2 text-4xl text-black font-dm"
                             onClick={() => setIsOpen(false)}
                         >
                             Offerte aanvragen

@@ -25,8 +25,8 @@ export const HouseCustomizer = () => {
         setSelectedModules(prev => {
             const isModuleSelected = prev.includes(moduleId);
             const updatedModules = isModuleSelected
-                ? prev.filter(id => id !== moduleId) // Remove the module
-                : [...prev, moduleId]; // Add the module
+                ? prev.filter(id => id !== moduleId)
+                : [...prev, moduleId];
 
             const updatedTotalCost = isModuleSelected
                 ? totalCost - moduleCost
@@ -41,7 +41,7 @@ export const HouseCustomizer = () => {
         return modules.map((module) => (
             <label
                 key={module.id}
-                className="flex items-center space-x-3 p-3 border rounded-lg hover:bg-gray-50 cursor-pointer"
+                className="flex cursor-pointer items-center rounded-lg border p-3 space-x-3 hover:bg-gray-50"
             >
                 <input
                     type="checkbox"
@@ -55,7 +55,7 @@ export const HouseCustomizer = () => {
     };
 
     return (
-        <section className="max-w-6xl mx-auto p-6 w-[90%] md:w-full bg-greenhomes-white rounded-lg shadow-lg">
+        <section className="mx-auto max-w-6xl rounded-lg p-6 shadow-lg w-[90%] bg-white md:rounded-no md:w-full md:rounded-r-none">
             <div className="space-y-6">
                 <div className="text-center space-y-2">
                     <h2 className="text-3xl font-bold">
@@ -66,16 +66,16 @@ export const HouseCustomizer = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid gap-8 md:grid-cols-2">
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-lg">Basis Modules</h3>
+                        <h3 className="text-lg font-semibold">Basis Modules</h3>
                         <div className="space-y-3">
                             {renderModules(basisModules)}
                         </div>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-lg">Duurzame Modules</h3>
+                        <h3 className="text-lg font-semibold">Duurzame Modules</h3>
                         <div className="space-y-3">
                             {renderModules(duurzameModules)}
                         </div>
@@ -83,7 +83,7 @@ export const HouseCustomizer = () => {
                 </div>
 
                 <div className="border-t pt-6 space-y-4">
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                         <div className="space-y-1">
                             <h4 className="font-semibold">Geschatte Kosten:</h4>
                             <p className="text-sm text-gray-500">

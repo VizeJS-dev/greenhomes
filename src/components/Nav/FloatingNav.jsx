@@ -2,12 +2,11 @@ import {useState, useEffect} from "react";
 import {motion, AnimatePresence} from "motion/react";
 
 // eslint-disable-next-line react/prop-types
-export const FloatingNav = ({navItems, className}) => {
+export const FloatingNav = ({className}) => {
     const [visible, setVisible] = useState(true); // Track visibility
     const [lastScrollY, setLastScrollY] = useState(0); // Store the previous scroll position
     const [isAtTop, setIsAtTop] = useState(true); // Track if the user is at the top of the page
 
-    // Scroll event handler
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
@@ -16,10 +15,8 @@ export const FloatingNav = ({navItems, className}) => {
             setVisible(true);
             setIsAtTop(true);
         } else {
-            // Lose 'at the top' status to restore shadow
             setIsAtTop(false);
 
-            // Check scrolling direction: scrolling down hides the nav, scrolling up shows it
             if (currentScrollY > lastScrollY) {
                 setVisible(false);
             } else if (currentScrollY < lastScrollY) {
@@ -30,11 +27,34 @@ export const FloatingNav = ({navItems, className}) => {
         setLastScrollY(currentScrollY);
     };
 
-    // Add and clean up scroll event listener
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScrollY]);
+
+    const navItems = [
+        {
+            name: "HOME",
+            link: "#header",
+            id: 'home'
+        },
+        {
+            name: "OVER ONS",
+            link: "#over-ons",
+            id: 'over-ons'
+        },
+        {
+            name: "ONTWERP UW HUIS",
+            link: "#ontwerp-uw-huis",
+            id: 'ontwerp-uw-huis'
+        },
+        {
+            name: "OFFERTE AANVRAGEN",
+            link: "#offerte-aanvragen",
+            id: 'offerte-aanvragen'
+        }
+    ]
+
 
     return (
         <AnimatePresence mode="wait">
@@ -55,7 +75,7 @@ export const FloatingNav = ({navItems, className}) => {
                     transition={{
                         duration: 0.2,
                     }}
-                    className={`hidden md:flex max-w-fit fixed top-11 right-24 rounded-full bg-greenhomes-white ${
+                    className={`hidden md:flex max-w-fit fixed top-11 right-24 rounded-xl bg-greenhomes-white ${
                         isAtTop
                             ? ""
                             : "shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
@@ -70,7 +90,7 @@ export const FloatingNav = ({navItems, className}) => {
                             className="relative flex items-center text-black space-x-1 link link-underline link-underline-black"
                         >
                             <span
-                                className="hidden text-center text-2xl text-bold font-k2d sm:block">{navItem.name}</span>
+                                className="hidden text-center text-2xl font-dm sm:block">{navItem.name}</span>
                         </a>
                     ))}
                 </motion.div>

@@ -28,7 +28,7 @@ export const Footer = () => {
                         <BsLinkedin className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                        <BsYoutube className="h-7 w-7 text-white transition ease-in hover:text-greenhomes-orange"/>
+                        <BsYoutube className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                 </div>
                 <div id="contact" className="flex flex-col items-center gap-4 md:flex-row md:justify-center">
