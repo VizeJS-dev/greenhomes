@@ -38,9 +38,9 @@ export const HamburgerNav = () => {
                 {isOpen && (
                     <motion.div
                         className="fixed top-0 left-0 right-0 bottom-0 h-fit flex-col bg-greenhomes-white shadow-lg z-40 pb-4"
-                        initial={{opacity: 0, y: "-100%"}}
-                        animate={{opacity: 1, y: "0%"}}
-                        exit={{opacity: 0, y: "-100%"}}
+                        initial={{y: "-100%"}}
+                        animate={{y: "0%"}}
+                        exit={{y: "-100%"}}
                         transition={{duration: 0.3}}
                     >
                         <h1 className="block text-4xl font-k2d font-bold px-6 py-2 text-greenhomes-darkgreen">GreenHomes</h1>

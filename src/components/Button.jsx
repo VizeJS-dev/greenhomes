@@ -3,7 +3,8 @@ export const Button = ({
                            text,
                            customSize = "", // Allows custom sizes like padding, font size
                            customStyles = "", // Allows passing other custom styles
-                           variant = "primary", // Used for default color variants
+                           variant = "primary",
+                           href// Used for default color variants
                        }) => {
     // Define Tailwind classes for look/variant
     const variantClasses = {
@@ -13,6 +14,7 @@ export const Button = ({
 
     return (
         <button
+            onClick={() => window.location.href = href}
             type={type}
             className={`${customSize} ${variantClasses[variant]} ${customStyles} transition duration-200 rounded-lg`}
         >

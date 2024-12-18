@@ -9,3 +9,22 @@
         scroll-behavior: smooth;
     }
 }
+
+@layer components {
+    .link-underline {
+        @apply border-b-0 transition-all duration-500 ease-in-out;
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+        background-size: 0 3px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+
+    .link-underline-black {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#D6A045, #D6A045);
+    }
+
+    .link-underline:hover {
+        background-size: 100% 3px;
+        background-position: 0 100%;
+    }
+}
