@@ -11,14 +11,16 @@ export const OverOns = () => {
                 name="Over ons"
                 className="flex min-h-screen flex-col items-center justify-center p-4 bg-greenhomes-white md:p-0"
             >
-                {/* Onze Missie */}
+                {/* Sectie - Onze Missie */}
                 <div
                     className="flex flex-col md:gap-0 max-w-[calc((100%_-_960px)/2_+_960px)] md:mt-2 md:flex-row mr-0 ml-auto"
                     id="onze-missie">
                     <div
                         className="flex flex-col gap-16 md:gap-0 max-w-[calc((100%_-_960px)/2_+_960px)] mr-0 ml-auto py-2 md:flex-row">
                         <div className="flex flex-col px-4 py-2">
-                            <h2 className="text-3xl font-bold font-dm text-greenhomes-orange sm:text-4xl md:text-5xl">Onze Missie</h2>
+                            {/* Titel en omschrijving van Onze Missie */}
+                            <h2 className="text-3xl font-bold font-dm text-greenhomes-orange sm:text-4xl md:text-5xl">Onze
+                                Missie</h2>
                             <p className="text-base leading-relaxed font-dm sm:text-lg md:text-xl md:leading-relaxed">
                                 Bij GreenHomes geloven we in het creëren van duurzame, op maat gemaakte woningen die
                                 perfect aansluiten op de levensstijl en wensen van onze klanten. Onze missie is om
@@ -28,12 +30,14 @@ export const OverOns = () => {
                                 groenere toekomst.
                             </p>
                         </div>
+                        {/* Afbeelding voor grotere schermen */}
                         <img
                             className="hidden w-full max-w-sm md:block md:rounded-l-2xl lg:max-w-md"
                             src={OnzeMissie}
                             alt="onze missie blob"
                         />
                     </div>
+                    {/* Afbeelding voor mobiele apparaten */}
                     <img
                         className="block w-full object-contain md:hidden"
                         src={OnzeMissieBlobMobile}
@@ -41,14 +45,16 @@ export const OverOns = () => {
                     />
                 </div>
 
-                {/* Ons Verhaal */}
+                {/* Sectie - Ons Verhaal */}
                 <div
                     className="flex flex-col md:gap-0 max-w-[calc((100%_-_960px)/2_+_960px)] md:mt-2 md:flex-row ml-0 mr-auto"
                     id="ons-verhaal">
                     <div
                         className="flex flex-col gap-16 md:gap-0 max-w-[calc((100%_-_960px)/2_+_960px)] py-2 md:flex-row-reverse">
                         <div className="flex flex-col px-4 py-2">
-                            <h2 className="text-3xl font-bold font-dm text-greenhomes-orange sm:text-4xl md:text-5xl">Ons Verhaal</h2>
+                            {/* Titel en omschrijving van Ons Verhaal */}
+                            <h2 className="text-3xl font-bold font-dm text-greenhomes-orange sm:text-4xl md:text-5xl">Ons
+                                Verhaal</h2>
                             <p className="text-base leading-relaxed font-dm sm:text-lg md:text-xl md:leading-relaxed">
                                 GreenHomes begon met een eenvoudige droom: duurzaam wonen toegankelijk maken voor
                                 iedereen.
@@ -61,12 +67,14 @@ export const OverOns = () => {
                                 toekomst – één woning tegelijk.
                             </p>
                         </div>
+                        {/* Afbeelding voor grotere schermen */}
                         <img
                             className="hidden w-full max-w-sm md:block md:rounded-r-2xl lg:max-w-md"
                             src={OnsVerhaal}
                             alt="ons verhaal blob"
                         />
                     </div>
+                    {/* Afbeelding voor mobiele apparaten */}
                     <img
                         className="block w-full object-contain md:hidden"
                         src={OnsVerhaalBlobMobile}

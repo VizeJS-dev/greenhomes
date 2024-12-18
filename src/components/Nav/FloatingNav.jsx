@@ -1,25 +1,27 @@
-import {useState, useEffect} from "react";
-import {motion, AnimatePresence} from "motion/react";
+import {useEffect, useState} from "react";
+import {AnimatePresence, motion} from "motion/react";
 
 // eslint-disable-next-line react/prop-types
 export const FloatingNav = ({className}) => {
-    const [visible, setVisible] = useState(true); // Track visibility
-    const [lastScrollY, setLastScrollY] = useState(0); // Store the previous scroll position
-    const [isAtTop, setIsAtTop] = useState(true); // Track if the user is at the top of the page
+    const [visible, setVisible] = useState(true); // Houd zichtbaarheid bij
+    const [lastScrollY, setLastScrollY] = useState(0); // Sla de vorige scrollpositie op
+    const [isAtTop, setIsAtTop] = useState(true); // Houd bij of de gebruiker bovenaan de pagina is
 
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY === 0) {
-            // At the top of the page, nav should be visible and lose its shadow
+            // Als gebruikers bovenaan de pagina zijn, maak nav zichtbaar en verwijder shadow
             setVisible(true);
             setIsAtTop(true);
         } else {
             setIsAtTop(false);
 
             if (currentScrollY > lastScrollY) {
+                // Verberg nav bij naar beneden scrollen
                 setVisible(false);
             } else if (currentScrollY < lastScrollY) {
+                // Toon nav bij naar boven scrollen
                 setVisible(true);
             }
         }
@@ -28,8 +30,9 @@ export const FloatingNav = ({className}) => {
     };
 
     useEffect(() => {
+        // Voeg een event listener toe voor scrollen
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll); // Verwijder event listener
     }, [lastScrollY]);
 
     const navItems = [
@@ -53,8 +56,7 @@ export const FloatingNav = ({className}) => {
             link: "#offerte-aanvragen",
             id: 'offerte-aanvragen'
         }
-    ]
-
+    ];
 
     return (
         <AnimatePresence mode="wait">

@@ -2,6 +2,7 @@ import {useState} from "react";
 import offerte from "../assets/OfferteAfbeeldingBlob.png";
 
 export const OfferteAanvragen = () => {
+    // State voor het formulier
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -9,14 +10,16 @@ export const OfferteAanvragen = () => {
         message: ''
     });
 
+    // Functie om wijzigingen in het formulier bij te houden
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         setFormData(prev => ({
             ...prev,
             [name]: value
         }));
     };
 
+    // Functie die wordt aangeroepen bij het indienen van het formulier
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
@@ -29,7 +32,7 @@ export const OfferteAanvragen = () => {
         >
             <div className="mx-auto max-w-7xl rounded-lg  p-6 md:p-12">
                 <div className="grid items-center gap-8 md:grid-cols-2">
-                    {/* Left Column - Text and Image */}
+                    {/* Linker kolom - Tekst en afbeelding */}
                     <div className="p-6 space-y-6 md:p-12">
                         <div className="max-w-lg">
                             <h1 className="mb-4 text-4xl text-greenhomes-orange font-bold font-dm">
@@ -44,7 +47,7 @@ export const OfferteAanvragen = () => {
                             </p>
                         </div>
                         <div className="relative">
-                            <div className="absolute bottom-0 left-0 h-32 w-full" />
+                            <div className="absolute bottom-0 left-0 h-32 w-full"/>
                             <img
                                 src={offerte}
                                 alt="Decorative plant"
@@ -53,8 +56,10 @@ export const OfferteAanvragen = () => {
                         </div>
                     </div>
 
+                    {/* Rechter kolom - Formulier */}
                     <div className="p-6 md:p-12">
                         <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* Naam veld */}
                             <div>
                                 <label
                                     htmlFor="name"
@@ -73,6 +78,7 @@ export const OfferteAanvragen = () => {
                                 />
                             </div>
 
+                            {/* E-mail veld */}
                             <div>
                                 <label
                                     htmlFor="email"
@@ -91,6 +97,7 @@ export const OfferteAanvragen = () => {
                                 />
                             </div>
 
+                            {/* Telefoon veld */}
                             <div>
                                 <label
                                     htmlFor="phone"
@@ -109,6 +116,7 @@ export const OfferteAanvragen = () => {
                                 />
                             </div>
 
+                            {/* Bericht veld */}
                             <div>
                                 <label
                                     htmlFor="message"
@@ -126,6 +134,7 @@ export const OfferteAanvragen = () => {
                                 />
                             </div>
 
+                            {/* Versturen knop */}
                             <button
                                 type="submit"
                                 className="w-full rounded-lg px-6 py-3 font-medium text-white transition-colors bg-greenhomes-green hover:bg-greenhomes-orange"

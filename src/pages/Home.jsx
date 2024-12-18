@@ -9,10 +9,12 @@ export const Home = () => {
             name="home"
             className="flex min-h-screen flex-col items-center gap-4 bg-greenhomes-white md:gap-0 md:py-6"
         >
+            {/* Hero sectie met content voor mobiel en desktop */}
             <div
                 className="mr-auto ml-0 flex-col md:w-[90%] md:h-[600px] md:flex-row"
                 id="hero"
             >
+                {/* Hero sectie zichtbaar op mobiele apparaten */}
                 <div className="flex-col px-6 py-2 md:hidden" id="mobile-hero">
                     <p className="text-5xl font-k2d md:w-[90%] md:text-6xl">
                         Uw duurzame droomhuis wacht op u.
@@ -27,6 +29,8 @@ export const Home = () => {
                         text="Begin met het ontwerpen van uw huis"
                     />
                 </div>
+
+                {/* Hero sectie zichtbaar op grotere schermen */}
                 <div
                     className="hidden w-full bg-cover bg-center md:block md:h-full md:rounded-r-2xl"
                     style={{backgroundImage: `url(${home})`}}
@@ -47,11 +51,15 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Afbeelding weergegeven op mobiele apparaten */}
             <img
                 className="block w-full object-contain md:hidden"
                 src={home}
                 alt="home blob"
             />
+
+            {/* Home container animatie */}
             <HomeContainerAnimation/>
         </section>
     )
