@@ -1,4 +1,4 @@
-# OverOns - GreenHomes Assessment
+# GreenHomes Assessment
 
 ## Project Description
 
