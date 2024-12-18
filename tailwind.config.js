@@ -15,7 +15,8 @@ export default {
         'greenhomes-lightgreen':'#99A68D',
       },
       fontFamily: {
-        'k2d': ['K2D', 'sans-serif']
+        'k2d': ['K2D', 'sans-serif'],
+        'dm': 'DM Sans, sans-serif'
       }
     },
   },

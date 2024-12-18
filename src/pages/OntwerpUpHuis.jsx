@@ -3,9 +3,9 @@ export const OntwerpUpHuis = () => {
         <>
             <div
                 id="ontwerp-uw-huis"
-                className="flex min-h-screen bg-greenhomes-lightgreen justify-center items-center"
+                className="flex min-h-screen items-center justify-center bg-greenhomes-lightgreen"
             >
-                <h2 className="text-3xl font-k2d font-medium text-greenhomes-orange">
+                <h2 className="text-3xl font-medium font-k2d text-greenhomes-orange">
                     Ontwerp uw huis
                 </h2>
             </div>

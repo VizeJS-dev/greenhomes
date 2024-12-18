@@ -55,7 +55,7 @@ export const FloatingNav = ({navItems, className}) => {
                     transition={{
                         duration: 0.2,
                     }}
-                    className={`hidden md:flex max-w-fit fixed top-11 right-8 rounded-full bg-greenhomes-white ${
+                    className={`hidden md:flex max-w-fit fixed top-11 right-24 rounded-full bg-greenhomes-white ${
                         isAtTop
                             ? ""
                             : "shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
@@ -67,10 +67,10 @@ export const FloatingNav = ({navItems, className}) => {
                         <a
                             key={`link-${idx}`}
                             href={navItem.link}
-                            className="relative items-center flex space-x-1 text-black link link-underline link-underline-black"
+                            className="relative flex items-center text-black space-x-1 link link-underline link-underline-black"
                         >
                             <span
-                                className="hidden sm:block text-bold text-2xl font-k2d text-center">{navItem.name}</span>
+                                className="hidden text-center text-2xl text-bold font-k2d sm:block">{navItem.name}</span>
                         </a>
                     ))}
                 </motion.div>

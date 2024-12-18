@@ -5,12 +5,12 @@ export const HamburgerNav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="relative md:hidden">
+        <div id="hamburger-menu" className="relative md:hidden">
             {/* Hamburger Button */}
-            <div className="fixed top-3 right-5 z-50">
+            <div className="fixed top-3 right-5 z-50 rounded-full shadow-lg bg-greenhomes-white">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center justify-center w-10 h-10 p-2 text-black"
+                    className="flex h-10 w-10 items-center justify-center p-2 text-black"
                 >
                     <span className="sr-only">Open main menu</span>
                     <div className="space-y-1">
@@ -37,37 +37,37 @@ export const HamburgerNav = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        className="fixed top-0 left-0 right-0 bottom-0 h-fit flex-col bg-greenhomes-white shadow-lg z-40 pb-4"
+                        className="fixed top-0 right-0 bottom-0 left-0 z-40 h-fit flex-col pb-4 shadow-lg bg-greenhomes-white"
                         initial={{y: "-100%"}}
                         animate={{y: "0%"}}
                         exit={{y: "-100%"}}
                         transition={{duration: 0.3}}
                     >
-                        <h1 className="block text-4xl font-k2d font-bold px-6 py-2 text-greenhomes-darkgreen">GreenHomes</h1>
+                        <h1 className="block px-6 py-2 text-4xl font-bold font-k2d text-greenhomes-darkgreen">GreenHomes</h1>
                         <a
-                            href="#home"
-                            className="block text-4xl font-k2d font-bold px-6 py-2 text-black"
+                            href="#header"
+                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
                             onClick={() => setIsOpen(false)}
                         >
                             Home
                         </a>
                         <a
                             href="#over-ons"
-                            className="block text-4xl font-k2d font-bold px-6 py-2 text-black"
+                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
                             onClick={() => setIsOpen(false)}
                         >
                             Over ons
                         </a>
                         <a
                             href="#ontwerp-uw-huis"
-                            className="block text-4xl font-k2d font-bold px-6 py-2 text-black"
+                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
                             onClick={() => setIsOpen(false)}
                         >
                             Ontwerp uw huis
                         </a>
                         <a
                             href="#offerte-aanvragen"
-                            className="block text-4xl font-k2d font-bold px-6 py-2 text-black"
+                            className="block px-6 py-2 text-4xl font-bold text-black font-k2d"
                             onClick={() => setIsOpen(false)}
                         >
                             Offerte aanvragen

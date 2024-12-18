@@ -10,7 +10,7 @@ function App() {
     const navItems = [
         {
             name: "HOME",
-            link: "#home",
+            link: "#header",
             id: 'home'
         },
         {
@@ -31,10 +31,10 @@ function App() {
     ]
 
   return (
-      <div className="w-screen h-full flex flex-col">
+      <div className="flex h-full w-screen flex-col">
           {/* Header Section */}
-          <div id="home" className="flex items-center justify-between px-6 py-2 md:px-12 md:py-12 bg-greenhomes-white">
-              <h1 className="text-4xl font-k2d font-bold text-greenhomes-darkgreen">
+          <div id="header" className="flex items-center justify-between px-6 py-2 bg-greenhomes-white md:px-24 md:py-12">
+              <h1 className="text-4xl font-bold font-k2d text-greenhomes-darkgreen">
                   GreenHomes
               </h1>
               <FloatingNav navItems={navItems} className=""/>

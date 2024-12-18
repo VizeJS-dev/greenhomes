@@ -3,9 +3,9 @@ export const OfferteAanvragen = () => {
         <>
             <div
                 id="offerte-aanvragen"
-                className="flex min-h-screen bg-greenhomes-darkgreen justify-center items-center"
+                className="flex min-h-screen items-center justify-center bg-greenhomes-darkgreen"
             >
-                <h2 className="text-3xl font-k2d font-medium text-greenhomes-white">
+                <h2 className="text-3xl font-medium font-k2d text-greenhomes-white">
                     Offerte aanvragen
                 </h2>
             </div>

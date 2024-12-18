@@ -13,37 +13,37 @@ import {
 export const Footer = () => {
     return (
         <>
-            <div className="flex flex-col h-fit bg-greenhomes-darkgreen gap-6 py-6">
-                <div id="socials" className="flex gap-4 justify-center">
+            <div className="flex h-fit flex-col gap-6 py-6 bg-greenhomes-darkgreen">
+                <div id="socials" className="flex justify-center gap-4">
                     <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                        <BsInstagram className="text-white w-6 h-6 hover:text-greenhomes-orange transition ease-in"/>
+                        <BsInstagram className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                     <a href="https://www.x.com/" target="_blank" rel="noreferrer">
-                        <BsTwitterX className="text-white w-6 h-6 hover:text-greenhomes-orange transition ease-in"/>
+                        <BsTwitterX className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                        <BsFacebook className="text-white w-6 h-6 hover:text-greenhomes-orange transition ease-in"/>
+                        <BsFacebook className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                     <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-                        <BsLinkedin className="text-white w-6 h-6 hover:text-greenhomes-orange transition ease-in"/>
+                        <BsLinkedin className="h-6 w-6 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                        <BsYoutube className="text-white w-7 h-7 hover:text-greenhomes-orange transition ease-in"/>
+                        <BsYoutube className="h-7 w-7 text-white transition ease-in hover:text-greenhomes-orange"/>
                     </a>
                 </div>
-                <div id="contact" className="flex flex-col md:flex-row items-center md:justify-center gap-4">
-                    <div className="flex flex-col md:flex-row gap-2">
+                <div id="contact" className="flex flex-col items-center gap-4 md:flex-row md:justify-center">
+                    <div className="flex flex-col gap-2 md:flex-row">
                         <div id="route" className="flex gap-4">
-                            <BsPinMapFill className="text-white w-6 h-6 "/>
+                            <BsPinMapFill className="h-6 w-6 text-white"/>
                             <a
-                                className="text-white underline hover:text-greenhomes-orange transition ease-in"
+                                className="text-white underline transition ease-in hover:text-greenhomes-orange"
                                 href="https://www.google.nl/maps/"
                             >
                                 Route
                             </a>
                         </div>
                         <div id="phone" className="flex gap-4">
-                            <BsTelephoneFill className="text-white w-6 h-6"/>
+                            <BsTelephoneFill className="h-6 w-6 text-white"/>
                             <a
                                 className="text-white"
                                 href="tel:+31501234567"
@@ -52,7 +52,7 @@ export const Footer = () => {
                             </a>
                         </div>
                         <div id="email" className="flex gap-4">
-                            <BsEnvelopeFill className="text-white w-6 h-6"/>
+                            <BsEnvelopeFill className="h-6 w-6 text-white"/>
                             <a
                                 className="text-white"
                                 href="mailto:info@greenhomes.nl"
@@ -62,7 +62,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <p className="text-white text-center">© 2024 GreenHomes. Alle rechten voorbehouden.
+                <p className="text-center text-white">© 2024 GreenHomes. Alle rechten voorbehouden.
                     Duurzaam wonen voor een betere toekomst.</p>
             </div>
         </>
