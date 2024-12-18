@@ -1,10 +1,10 @@
 export const CustomContainer = ({icon : Icon, title, content}) => {
     return (
-        <div className="w-[90%] md:h-[200px] bg-greenhomes-white shadow-md rounded-lg overflow-hidden border border-gray-200">
-            <div className="relative pt-12 px-6">
+        <div className="w-[90%] md:h-[200px] flex flex-col justify-center bg-greenhomes-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+            <div className="relative pt-6 px-6">
                 {Icon && (
                     <span aria-hidden="true">
-                    <Icon className="w-8 h-8" />
+                    <Icon className="w-8 h-8 mb-2" />
                 </span>
                 )}
                 <h2 className="text-xl font-dm font-semibold text-gray-800">{title}</h2>

@@ -2,7 +2,7 @@ import {Button} from "../components/Button.jsx";
 import home from "../assets/Home.webp";
 import HomeMobile from "../assets/HomeMobile.png";
 import {CustomContainer} from "../components/CustomContainer.jsx";
-import {BsHouse} from "react-icons/bs";
+import {BsHouse, BsBattery, BsTree} from "react-icons/bs";
 
 export const Home = () => {
     return (
@@ -62,11 +62,11 @@ export const Home = () => {
                 <p className="mb-2 text-center text-2xl font-semibold font-dm">Waarom onze woningen uniek zijn:</p>
                 <div className="flex flex-col items-center md:items-start justify-center gap-6 md:flex-row">
                     <CustomContainer icon={BsHouse} title="Modulair Ontwerp"
-                                   content="Aanpasbare en uitbreidbare huizen die meegroeien met uw behoeften."/>
-                    <CustomContainer icon={BsHouse} title="Milieuvriendelijke Materialen"
-                                   content="Duurzaam gewonnen materialen voor een verminderde milieu-impact."/>
-                    <CustomContainer icon={BsHouse} title="Energie-efficiëntie"
-                                   content="Geavanceerde isolatie en slimme systemen voor een lager energieverbruik."/>
+                                     content="Aanpasbare en uitbreidbare huizen die meegroeien met uw behoeften."/>
+                    <CustomContainer icon={BsTree} title="Milieuvriendelijke Materialen"
+                                     content="Duurzaam gewonnen materialen voor een verminderde milieu-impact."/>
+                    <CustomContainer icon={BsBattery} title="Energie-efficiëntie"
+                                     content="Geavanceerde isolatie en slimme systemen voor een lager energieverbruik."/>
                 </div>
             </div>
         </section>
