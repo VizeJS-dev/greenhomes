@@ -28,14 +28,14 @@ export const OfferteAanvragen = () => {
     return (
         <section id="offerte-aanvragen"
                  name="Offerte aanvragen"
-                 className=" flex min-h-screen flex-col items-center justify-center p-4 bg-greenhomes-white md:p-0 overflow-hidden"
+                 className="flex min-h-screen flex-col items-center justify-center overflow-hidden p-4 bg-greenhomes-white md:p-0"
         >
-            <div className="mx-auto max-w-7xl rounded-lg  p-6 md:p-12">
+            <div className="mx-auto max-w-7xl rounded-lg p-6 md:p-12">
                 <div className="grid items-center gap-8 md:grid-cols-2">
                     {/* Linker kolom - Tekst en afbeelding */}
                     <div className="p-6 space-y-6 md:p-12">
                         <div className="max-w-lg">
-                            <h1 className="mb-4 text-4xl text-greenhomes-orange font-bold font-dm">
+                            <h1 className="mb-4 text-4xl font-bold text-greenhomes-orange font-dm">
                                 Klaar voor een duurzame toekomst?
                             </h1>
                             <h2 className="mb-4 text-2xl font-dm">
@@ -51,7 +51,7 @@ export const OfferteAanvragen = () => {
                             <img
                                 src={offerte}
                                 alt="Decorative plant"
-                                className="relative z-10 mx-auto w-full h-full max-w-md"
+                                className="relative z-10 mx-auto h-full w-full max-w-md"
                             />
                         </div>
                     </div>

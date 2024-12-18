@@ -8,7 +8,7 @@ export const CustomContainer = ({icon: Icon, title, content}) => {
                 {/* Controleer of er een icoon is, en toon deze */}
                 {Icon && (
                     <span aria-hidden="true">
-                    <Icon className="text-greenhomes-orange mb-2 h-8 w-8"/>
+                    <Icon className="mb-2 h-8 w-8 text-greenhomes-orange"/>
                 </span>
                 )}
                 {/* Titel van de CustomContainer */}

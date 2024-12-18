@@ -60,7 +60,7 @@ export const HouseCustomizer = () => {
 
     return (
         <section
-            className="mx-auto max-w-6xl rounded-lg p-6 shadow-lg w-[90%] bg-white md:rounded-no md:w-full md:rounded-r-none">
+            className="mx-auto max-w-6xl rounded-lg bg-white p-6 shadow-lg w-[90%] md:rounded-no md:w-full md:rounded-r-none">
             <div className="space-y-6">
                 <div className="text-center space-y-2">
                     <h2 className="text-3xl font-bold">
