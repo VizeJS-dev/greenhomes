@@ -35,7 +35,7 @@ export const OfferteAanvragen = () => {
                     {/* Linker kolom - Tekst en afbeelding */}
                     <div className="p-6 space-y-6 md:p-12">
                         <div className="max-w-lg">
-                            <h1 className="mb-4 text-4xl font-bold text-greenhomes-orange font-dm">
+                            <h1 className="mb-4 text-4xl font-bold text-black font-dm">
                                 Klaar voor een duurzame toekomst?
                             </h1>
                             <h2 className="mb-4 text-2xl font-dm">
