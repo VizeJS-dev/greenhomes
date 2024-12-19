@@ -28,7 +28,7 @@ export const OfferteAanvragen = () => {
     return (
         <section id="offerte-aanvragen"
                  name="Offerte aanvragen"
-                 className="flex min-h-screen flex-col items-center justify-center overflow-hidden p-4 bg-greenhomes-white md:p-0"
+                 className="flex min-h-screen-[50%] flex-col items-center justify-center overflow-hidden p-4 bg-greenhomes-white md:p-0"
         >
             <div className="mx-auto max-w-7xl rounded-lg p-6 md:p-12">
                 <div className="grid items-center gap-8 md:grid-cols-2">

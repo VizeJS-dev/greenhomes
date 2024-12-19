@@ -77,7 +77,7 @@ export const FloatingNav = ({className}) => {
                     transition={{
                         duration: 0.2,
                     }}
-                    className={`hidden md:flex max-w-fit fixed top-11 right-24 rounded-xl bg-greenhomes-white ${
+                    className={`hidden md:flex max-w-fit fixed top-4 right-24 rounded-xl bg-greenhomes-white ${
                         isAtTop
                             ? ""
                             : "shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"

@@ -24,7 +24,7 @@ export const HomeContainerAnimation = () => {
     return (
         // Hoofdmotion-div voor de gehele container
         <motion.div
-            className="-bottom-1 z-10 mx-auto flex w-full flex-col items-center justify-center md:absolute md:items-start md:p-24"
+            className="bottom-[9.25rem] z-10 mx-auto flex w-full flex-col items-center justify-center md:absolute md:items-start md:p-24"
             initial="hidden" // Starttoestand van de animatie
             animate="visible" // Eindtoestand van de animatie
             variants={containerVariants} // Toepassen van containeranimatievarianten
@@ -36,7 +36,7 @@ export const HomeContainerAnimation = () => {
 
             {/* Sub-container met individuele elementen */}
             <motion.div
-                className="flex flex-col items-center justify-center gap-6 md:flex-row md:items-start"
+                className="flex flex-col w-[90%] md:w-full items-center justify-center gap-6 md:flex-row md:items-start"
                 variants={containerVariants} // Toepassen van dezelfde containeranimatie
             >
                 {/* Individuele animatie-item voor "Modulair Ontwerp" */}

@@ -7,7 +7,7 @@ export const Home = () => {
         <section
             id="home"
             name="home"
-            className="flex min-h-screen flex-col items-center gap-4 bg-greenhomes-white md:gap-0 md:py-6"
+            className="flex flex-col items-center gap-4 bg-greenhomes-white md:gap-0 "
         >
             {/* Hero sectie met content voor mobiel en desktop */}
             <div

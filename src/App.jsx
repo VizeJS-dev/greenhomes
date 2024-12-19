@@ -11,7 +11,7 @@ function App() {
         <div className="flex w-full flex-col">
             {/* Header Sectie */}
             <div id="header"
-                 className="flex items-center justify-between px-6 py-2 bg-greenhomes-white md:px-24 md:py-12">
+                 className="flex items-center justify-between px-6 py-2 bg-greenhomes-white md:px-24 md:py-4">
                 <h1 className="text-4xl font-bold font-k2d text-greenhomes-darkgreen">
                     GreenHomes
                 </h1>
