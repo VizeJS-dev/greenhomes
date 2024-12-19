@@ -8,7 +8,7 @@ export const OntwerpUpHuis = () => {
                 <div
                     id="ontwerp-uw-huis"
                     name="Ontwerp uw huis"
-                    className="flex min-h-screen flex-col items-center justify-center overflow-x-hidden py-12 bg-greenhomes-white md:flex-row md:py-0"
+                    className="flex min-h-screen flex-col items-center justify-center overflow-x-hidden py-12 bg-greenhomes-orange md:flex-row md:py-0"
                 >
                     <div className="flex w-full flex-col items-center gap-12 md:flex-row md:gap-0">
                         {/* Afbeelding sectie */}
